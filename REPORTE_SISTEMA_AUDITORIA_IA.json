@@ -1,0 +1,1953 @@
+{
+    "titulo_general": "INFORME INTEGRAL DE AUDITORÍA CONTABLE IA",
+    "analisis_maestro_excel": {
+        "titulo": "DESCRIPCIÓN Y ANÁLISIS DEL ARCHIVO MAESTRO EXCEL",
+        "metadata": {
+            "fecha_analisis": "2026-02-03 20:38:36",
+            "archivo_origen": "/Users/andres/Desktop/proyecto_facturas_IA/Datos/YCO01 - AP LISTING 20260104 con nit.xlsx"
+        },
+        "contenido_clave": {
+            "monedas": {
+                "columna_identificada": "Curr.",
+                "valores_encontrados": [
+                    "COP",
+                    "USD"
+                ]
+            },
+            "fechas": {
+                "rango_emision_facturas": "01/01/2026 al 16/01/2026",
+                "columna_emision_usada": "Invoice Date",
+                "rango_vencimientos_pago": "07/01/2026 al 17/03/2026",
+                "columna_vencimiento_usada": "Due Date"
+            },
+            "proveedores": {
+                "total_unicos": 11,
+                "columna_usada": "Supplier/Beneficiary Name",
+                "lista_completa": [
+                    "CAMARA DE COMERCIO DE BOGOTA",
+                    "COLOMBIANA DE COMERCIO SA Y/O ALKOSTO SA",
+                    "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "EDIFICIO TORRE 90 - PROPIEDAD HORIZONTAL",
+                    "EMPRESAS DE MEDELLIN ESP",
+                    "GVM LIMITED",
+                    "IDENTICO SAS",
+                    "MOON CREATIVO LLC",
+                    "PAN AMERICAN LIFE DE COLOMBIA COMPANIA DE SEGUROS SA",
+                    "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "VLA SAS"
+                ]
+            }
+        },
+        "calidad_datos": {
+            "integridad_global": "72.1%",
+            "vacios_por_columna": {
+                "Consecutivo": 55,
+                "Portfolio": 31,
+                "Legal Name": 55,
+                "COA": 0,
+                "Request Date": 0,
+                "Invoice Date": 0,
+                "Due Date": 0,
+                "Supplier/Beneficiary Name": 0,
+                "Invoice ID": 0,
+                "NIT": 0,
+                "Subtotal": 0,
+                "VAT/WHT1": 0,
+                "VAT/WHT2": 0,
+                "Amount Total": 0,
+                "Curr.": 0,
+                "Ex. Rate": 0,
+                "In USD": 0,
+                "Category": 53,
+                "Supplier Reference Number": 55,
+                "PO #": 31,
+                "Spend Category": 0,
+                "Cost Center": 0,
+                "Location": 0,
+                "MSA": 0,
+                "Line Item Description": 0,
+                "PO #2": 55,
+                "WD": 55,
+                "AP Comment": 55,
+                "Base / Subtotal": 0
+            }
+        }
+    },
+    "analisis_calidad_tipologia_pdf": {
+        "titulo": "ANÁLISIS DE COMPLETITUD Y TIPOLOGÍA DE FACTURAS (FUENTE: PDFs)",
+        "metadata": {
+            "fecha_analisis": "2026-02-03 20:38:36",
+            "total_procesados": 30,
+            "total_exitosos": 30
+        },
+        "distribucion_global": {
+            "ELECTRÓNICA": 18,
+            "EQUIVALENTE": 7,
+            "N/A": 4,
+            "DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD": 1
+        },
+        "detalle_por_tipo_documento": {
+            "ELECTRÓNICA": {
+                "cantidad_documentos": 18,
+                "representacion_del_total": "60.0%",
+                "analisis_campos": {
+                    "cufe": {
+                        "cantidad": 18,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "nit_proveedor": {
+                        "cantidad": 18,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "orden_compra": {
+                        "cantidad": 17,
+                        "porcentaje": 94.4,
+                        "descripcion": "Muy frecuente (>80%)"
+                    },
+                    "fecha_vencimiento": {
+                        "cantidad": 17,
+                        "porcentaje": 94.4,
+                        "descripcion": "Muy frecuente (>80%)"
+                    },
+                    "digito_verificación": {
+                        "cantidad": 18,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    }
+                },
+                "conclusion_ia": "Este tipo de documento (ELECTRÓNICA) suele tener Siempre presente (100%) el CUFE y Siempre presente (100%) el NIT."
+            },
+            "EQUIVALENTE": {
+                "cantidad_documentos": 7,
+                "representacion_del_total": "23.3%",
+                "analisis_campos": {
+                    "cufe": {
+                        "cantidad": 0,
+                        "porcentaje": 0.0,
+                        "descripcion": "No detectado (0%)"
+                    },
+                    "nit_proveedor": {
+                        "cantidad": 7,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "orden_compra": {
+                        "cantidad": 0,
+                        "porcentaje": 0.0,
+                        "descripcion": "No detectado (0%)"
+                    },
+                    "fecha_vencimiento": {
+                        "cantidad": 7,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "digito_verificación": {
+                        "cantidad": 7,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    }
+                },
+                "conclusion_ia": "Este tipo de documento (EQUIVALENTE) suele tener No detectado (0%) el CUFE y Siempre presente (100%) el NIT."
+            },
+            "N/A": {
+                "cantidad_documentos": 4,
+                "representacion_del_total": "13.3%",
+                "analisis_campos": {
+                    "cufe": {
+                        "cantidad": 0,
+                        "porcentaje": 0.0,
+                        "descripcion": "No detectado (0%)"
+                    },
+                    "nit_proveedor": {
+                        "cantidad": 3,
+                        "porcentaje": 75.0,
+                        "descripcion": "Común (>50%)"
+                    },
+                    "orden_compra": {
+                        "cantidad": 3,
+                        "porcentaje": 75.0,
+                        "descripcion": "Común (>50%)"
+                    },
+                    "fecha_vencimiento": {
+                        "cantidad": 3,
+                        "porcentaje": 75.0,
+                        "descripcion": "Común (>50%)"
+                    },
+                    "digito_verificación": {
+                        "cantidad": 3,
+                        "porcentaje": 75.0,
+                        "descripcion": "Común (>50%)"
+                    }
+                },
+                "conclusion_ia": "Este tipo de documento (N/A) suele tener No detectado (0%) el CUFE y Común (>50%) el NIT."
+            },
+            "DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD": {
+                "cantidad_documentos": 1,
+                "representacion_del_total": "3.3%",
+                "analisis_campos": {
+                    "cufe": {
+                        "cantidad": 0,
+                        "porcentaje": 0.0,
+                        "descripcion": "No detectado (0%)"
+                    },
+                    "nit_proveedor": {
+                        "cantidad": 1,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "orden_compra": {
+                        "cantidad": 0,
+                        "porcentaje": 0.0,
+                        "descripcion": "No detectado (0%)"
+                    },
+                    "fecha_vencimiento": {
+                        "cantidad": 1,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    },
+                    "digito_verificación": {
+                        "cantidad": 1,
+                        "porcentaje": 100.0,
+                        "descripcion": "Siempre presente (100%)"
+                    }
+                },
+                "conclusion_ia": "Este tipo de documento (DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD) suele tener No detectado (0%) el CUFE y Siempre presente (100%) el NIT."
+            }
+        }
+    },
+    "EXTRACCIÓN DE DATOS PDF": [
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490061426.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0061426",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "260.173,79",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "75.483,21",
+            "total": "335.657,00",
+            "numero_lineas": 4,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_CAMARA COMERCIO BOGOTÁ_COYCO010801.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "CÁMARA COMERCIO DE BOGOTÁ",
+            "nit_proveedor": "860007322",
+            "digito_verificación": "9",
+            "numero_factura": "N/A",
+            "fecha_emision": "07/01/2026",
+            "fecha_vencimiento": "07/01/2026",
+            "moneda": "COP",
+            "subtotal": "12.100,00",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,00",
+            "total": "12.100,00",
+            "numero_lineas": 1,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "N/A",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037460.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037460",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "794.529,57",
+            "iva_porcentage": 0,
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,43",
+            "total": "794.530,00",
+            "numero_lineas": 5,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59208.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59208",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "2'828.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "537.320,00",
+            "otros_impuestos": "0,00",
+            "total": "3'365.320,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25000899",
+            "cufe": "688bf2fef868d49cf961bdaa52b4866fa348122d0eb3ba9aeae224585d737a97475cc4eac8f23387631be29f34a5850a",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_Pan American Life De Colombia_SMSC60824.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "PAN AMERICAN LIFE DE COLOMBIA COMPAÑIA DE SEGUROS S.A.",
+            "nit_proveedor": "860038299",
+            "digito_verificación": "1",
+            "numero_factura": "SMSC-60824",
+            "fecha_emision": "15/01/2026",
+            "fecha_vencimiento": "N/A",
+            "moneda": "COP",
+            "subtotal": "26'852.010,00",
+            "iva_porcentage": 0,
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,00",
+            "total": "26'852.010,00",
+            "numero_lineas": 1,
+            "orden_compra": "N/A",
+            "cufe": "8702fc59aa10016a1b5174fa00f0ba4e8065aef922927390886c484eefa0d355407dd77e93db807648f5e49c4c235cbe",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_IDENTICO SAS_FE910335.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "IDENTICO SAS",
+            "nit_proveedor": "800199498",
+            "digito_verificación": "0",
+            "numero_factura": "FE9 10335",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "830.234,00",
+            "iva_porcentage": "19",
+            "iva_monto": "157.744,46",
+            "otros_impuestos": "0,00",
+            "total": "987.978,46",
+            "numero_lineas": 2,
+            "orden_compra": "PO-YCO01-25001516",
+            "cufe": "f9b192f532e8751bfc5154a2956d90ad36b0bdf9a1ce364393e5a5ed5ba68311aa0be50ea80fd3a6d90e6f5215a3eab4",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_IDENTICO SAS_FE910334.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "IDENTICO SAS",
+            "nit_proveedor": "800199498",
+            "digito_verificación": "0",
+            "numero_factura": "FE9 10334",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "583.476,00",
+            "iva_porcentage": "19",
+            "iva_monto": "110.860,44",
+            "otros_impuestos": "0,00",
+            "total": "694.336,44",
+            "numero_lineas": 2,
+            "orden_compra": "PO-YCO01-25001515",
+            "cufe": "0366771f8c0ec80d8d194942935abf2186b9cabe0fdc185520b6ac19e8e03873fa024658e0d7fd85d4d79c35ee4cda7b",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037830.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037830",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "86.630,28",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "43.456,72",
+            "total": "130.087,00",
+            "numero_lineas": 14,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "Documento Equivalente Electrónico SPD",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50625.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA.",
+            "nit_proveedor": "890982458",
+            "digito_verificación": "1",
+            "numero_factura": "FM50625",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "06/02/2026",
+            "moneda": "COP",
+            "subtotal": "9'544.746,78",
+            "iva_porcentage": 19,
+            "iva_monto": "181.350,19",
+            "otros_impuestos": "0,00",
+            "total": "9'726.096,97",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25001198",
+            "cufe": "1ab451550d4c58ee3f8d704dcd1941ef3537e0929e3a2bcaa4d4b6f50033ac215ac281acc5417f23df362790bbcf0780",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_GVM LIMITED_Concentrix-INV-202512-27.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "GVM LIMITED",
+            "nit_proveedor": "N/A",
+            "digito_verificación": "N/A",
+            "numero_factura": "Concentrix-INV-202512-27",
+            "fecha_emision": "01/01/2026",
+            "fecha_vencimiento": "15/02/2026",
+            "moneda": "USD",
+            "subtotal": "5.134,98",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,00",
+            "total": "5.134,98",
+            "numero_lineas": 9,
+            "orden_compra": "PO-YCO01-25001117-1, PO-YCO01-25001324",
+            "cufe": "N/A",
+            "tipo_factura": "N/A",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037395.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037395",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "182.367,13",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "92.102,87",
+            "total": "274.470,00",
+            "numero_lineas": 14,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490061448.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "1490061448",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "103.835,38",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "-0,38",
+            "total": "103.835,00",
+            "numero_lineas": 3,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50620.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA.",
+            "nit_proveedor": "890982458",
+            "digito_verificación": "1",
+            "numero_factura": "FM50620",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "06/02/2026",
+            "moneda": "COP",
+            "subtotal": "13'900.859,29",
+            "iva_porcentage": "19",
+            "iva_monto": "264.116,33",
+            "otros_impuestos": "0,00",
+            "total": "14'164.975,62",
+            "numero_lineas": "1",
+            "orden_compra": "PO-YCO01-25001506",
+            "cufe": "46e05a659c8372eca7a24ebaa994ecd6757196846993bfe583d4f4b608175af61d42977ead1d8adbc5f7004fc044fc47",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037838.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037838",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "610.333,95",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "150.879,05",
+            "total": "761.213,00",
+            "numero_lineas": 4,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50621.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA.",
+            "nit_proveedor": "890982458",
+            "digito_verificación": "1",
+            "numero_factura": "FM50621",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "06/02/2026",
+            "moneda": "COP",
+            "subtotal": "27'801.718,57",
+            "iva_porcentage": 19,
+            "iva_monto": "528.232,65",
+            "otros_impuestos": "0,00",
+            "total": "28'329.951,22",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25001505",
+            "cufe": "a0c1e8c1322a9d46c1446dd382f73de36d0c9e242f6ef0eb334eaf81962c26f4b9415e34576e73feb2a2c0b7fd11cb44",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50623.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA.",
+            "nit_proveedor": "890982458",
+            "digito_verificación": "1",
+            "numero_factura": "FM50623",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "06/02/2026",
+            "moneda": "COP",
+            "subtotal": "13'900.859,29",
+            "iva_porcentage": "19",
+            "iva_monto": "264.116,33",
+            "otros_impuestos": "0,00",
+            "total": "14'164.975,62",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25001507",
+            "cufe": "61a99e288fc85211421f048adc347d6508f02ce10395ffc05030e34903a7a467846db638e86f25b8eb0e20419179cee0",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037378.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037378",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "792.583,05",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "174.964,95",
+            "total": "967.548,00",
+            "numero_lineas": 5,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_VLA S.A.S_FE2560.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "VLA S.A.S",
+            "nit_proveedor": "900552533",
+            "digito_verificación": "7",
+            "numero_factura": "FE 2560",
+            "fecha_emision": "13/01/2026",
+            "fecha_vencimiento": "12/02/2026",
+            "moneda": "COP",
+            "subtotal": "1'515.159,00",
+            "iva_porcentage": 19,
+            "iva_monto": "287.880,21",
+            "otros_impuestos": "-'118.424,83",
+            "total": "1'684.614,38",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25001469",
+            "cufe": "9c06da8d2500d2eedf1f0f0742a2653eea8d02a959f7055d2caf2c04f5ca0fa6a7981404a6c8ee2133d6e51dc9815525",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50622.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA.",
+            "nit_proveedor": "890982458",
+            "digito_verificación": "1",
+            "numero_factura": "FM50622",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "06/02/2026",
+            "moneda": "COP",
+            "subtotal": "53'647.407,16",
+            "iva_porcentage": "19",
+            "iva_monto": "1'019.300,74",
+            "otros_impuestos": "0,00",
+            "total": "54'666.707,90",
+            "numero_lineas": "6",
+            "orden_compra": "PO-YCO01-26000002",
+            "cufe": "966caadd92e3dbf51c7ca723c6f9d274d5e88a70e280b4d3ff077c97c1a20ff0ded2c2687befa8ad3c52023319826a4b",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_Moon Creativo LLC_INV32.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "MOON CREATIVO LLC",
+            "nit_proveedor": "900319696",
+            "digito_verificación": "1",
+            "numero_factura": "INV-32",
+            "fecha_emision": "16/01/2026",
+            "fecha_vencimiento": "17/03/2026",
+            "moneda": "USD",
+            "subtotal": "3.040,00",
+            "iva_porcentage": 0,
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,00",
+            "total": "3.040,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-260-00044",
+            "cufe": "N/A",
+            "tipo_factura": "N/A",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59205.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59205",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "3'016.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "573.040,00",
+            "otros_impuestos": "0,00",
+            "total": "3'589.040,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25000901",
+            "cufe": "f80f947c99a0de0fb13cad78034ca5026f1dadf0e4994c62c153314b5a85a3a258e0087c1ef8451aeeb589058d4677b1",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59206.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59206",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "1'008.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "191.520,00",
+            "otros_impuestos": "0,00",
+            "total": "1'199.520,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25000900",
+            "cufe": "fafc832a0d20648bdb7bbe46f89604b9278f576d5ae61791ac32257b615ee5cc0caafa21f879d9e2433ec614cc8d1562",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EDIFICIO TORRE 90_CTA25001539.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EDIFICIO TORRE 90",
+            "nit_proveedor": "901487738",
+            "digito_verificación": "5",
+            "numero_factura": "N/A",
+            "fecha_emision": "08/01/2026",
+            "fecha_vencimiento": "N/A",
+            "moneda": "COP",
+            "subtotal": "650.000,00",
+            "iva_porcentage": 0,
+            "iva_monto": "0,00",
+            "otros_impuestos": "0,00",
+            "total": "650.000,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25001539",
+            "cufe": "N/A",
+            "tipo_factura": "N/A",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_EMPRESAS DE MEDELLIN ESP_1490037446.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P.",
+            "nit_proveedor": "890904996",
+            "digito_verificación": "1",
+            "numero_factura": "149 0037446",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "29/01/2026",
+            "moneda": "COP",
+            "subtotal": "69.223,58",
+            "iva_porcentage": "N/A",
+            "iva_monto": "0,00",
+            "otros_impuestos": "24.804,42",
+            "total": "94.028,00",
+            "numero_lineas": 3,
+            "orden_compra": "N/A",
+            "cufe": "N/A",
+            "tipo_factura": "equivalente",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59203.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59203",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "180.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "34.200,00",
+            "otros_impuestos": "0,00",
+            "total": "214.200,00",
+            "numero_lineas": 2,
+            "orden_compra": "PO-YCO01-25000903",
+            "cufe": "c9eaedf734604fd9959c40aa24000f18718720df3706f836dc195964dac542672a4d797e16a3dbfdd5aaf807baa9d9d0",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59202.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59202",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "272.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "51.680,00",
+            "otros_impuestos": "0,00",
+            "total": "323.680,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25000905",
+            "cufe": "6ee139e775b52bf074edf6f33f54d35d410ff3f320dbb70aa8253c736781c660f2a54bcc71a91a32b642979771765773",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_ Colombiana de Comercio S.A. _X9922531322.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "ALKOSTO",
+            "nit_proveedor": "890900943",
+            "digito_verificación": "1",
+            "numero_factura": "X9922531322",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "5'057.411,00",
+            "iva_porcentage": 19,
+            "iva_monto": "77.389,00",
+            "otros_impuestos": "0,00",
+            "total": "5'134.800,00",
+            "numero_lineas": 63,
+            "orden_compra": "PO-YCO01-26000016",
+            "cufe": "c4a048c9e458457bdd319c487aecb8b4d7cd626ea9b6bcfdad29f6f3a8ab32086bd2ffef408df69211526348a361be6b",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_ Colombiana de Comercio S.A. _X9922531320.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "ALKOSTO",
+            "nit_proveedor": "890900943",
+            "digito_verificación": "1",
+            "numero_factura": "X9922531320",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "3'260.515,00",
+            "iva_porcentage": 19,
+            "iva_monto": "49.485,00",
+            "otros_impuestos": "0,00",
+            "total": "3'310.000,00",
+            "numero_lineas": 40,
+            "orden_compra": "PO-YCO0125001502",
+            "cufe": "c5909ad21f6a3615d1fc0d1b8b2700a2bca4503e01cf5b5d638be879abb8a6b44d6b19d634cae0c49db5b366f0a3c96f",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_SUCOMPUTO S.A.S _59201.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "SUCOMPUTO S.A.S",
+            "nit_proveedor": "800079939",
+            "digito_verificación": "2",
+            "numero_factura": "59201",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "272.000,00",
+            "iva_porcentage": 19,
+            "iva_monto": "51.680,00",
+            "otros_impuestos": "0,00",
+            "total": "323.680,00",
+            "numero_lineas": 1,
+            "orden_compra": "PO-YCO01-25000909",
+            "cufe": "5c2b213f375aa1e797164d77151e02579a341bbb8cdefbb16941c1f38f5e8780b88d6454c2967d60d71994e55c4e2bde",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        },
+        {
+            "archivo_origen": "YCO01_ Colombiana de Comercio S.A. _X9922531321.pdf",
+            "estado": "Exitoso",
+            "nombre_proveedor": "ALKOSTO",
+            "nit_proveedor": "890900943",
+            "digito_verificación": "1",
+            "numero_factura": "X9922531321",
+            "fecha_emision": "14/01/2026",
+            "fecha_vencimiento": "14/02/2026",
+            "moneda": "COP",
+            "subtotal": "3'976.740,00",
+            "iva_porcentage": 19,
+            "iva_monto": "52.560,00",
+            "otros_impuestos": "0,00",
+            "total": "4'029.300,00",
+            "numero_lineas": 37,
+            "orden_compra": "YCO01-26000017",
+            "cufe": "1fafa4edb8483fcbe8d0484856a291eb29f79463b447a7af26b895bf201657623df4f723ad425e82df73aa10e648e8d7",
+            "tipo_factura": "electrónica",
+            "verificación": true
+        }
+    ],
+    "cruce y conciliación": [
+        {
+            "nit": "890905055",
+            "factura": "1490061426",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (4 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 14332.02,
+                    "iva_linea": 0.0,
+                    "concepto": "12424698 - Acueducto de energÃ­a y alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 22075.2,
+                    "iva_linea": 0.0,
+                    "concepto": "12424698 - Acueducto de energÃ­a y alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 80553.55,
+                    "iva_linea": 0.0,
+                    "concepto": "12424698 - Acueducto de energÃ­a y alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 4,
+                    "subtotal_linea": 218696.23,
+                    "iva_linea": 0.0,
+                    "concepto": "12424698 - Acueducto de energÃ­a y alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890982458",
+            "factura": "FM50621",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Factura repetida en Maestro (2 registros)",
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 25021546.71,
+                    "iva_linea": 0.0,
+                    "concepto": "Line 1: Security Services Torre 90 Two 24/7 guard December"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 2780171.86,
+                    "iva_linea": 528232.65,
+                    "concepto": "Line 1: Security Services Torre 90 Two 24/7 guard December"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "pdf": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 27801718.57,
+                    "pdf": 27801718.57,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 528232.65,
+                    "pdf": 528232.65
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "900552533",
+            "factura": "FE2560",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 1515159.0,
+                    "iva_linea": 287880.21,
+                    "concepto": "This PO is for the additional expenses that we need to cover during the clients end of the year even"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "VLA SAS",
+                    "pdf": "VLA S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 1515159.0,
+                    "pdf": 1515159.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 287880.21,
+                    "pdf": 287880.21
+                },
+                "fecha": {
+                    "maestro": "13/01/2026",
+                    "pdf": "13/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "352886667",
+            "factura": "INV32",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 3040.0,
+                    "iva_linea": 0.0,
+                    "concepto": "This PO belong to the gifts that we gave to Latam clients in the end of the year events for Concentr"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037838",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490061426",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "800079939",
+            "factura": "59202",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 272000.0,
+                    "iva_linea": 51680.0,
+                    "concepto": "monitoreo UPS Service 1 Line 1 Bogota 5 â€“ 6 Equipements:Â  68 USD Mensual 272000 COP mensual 3264000"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 272000.0,
+                    "pdf": 272000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 51680.0,
+                    "pdf": 51680.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800079939",
+            "factura": "59201",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 272000.0,
+                    "iva_linea": 51680.0,
+                    "concepto": "monitoreo UPS Service 2 Line 2 Bogota 4 â€“ 6 Equipements:Â  68 USD Mensual 272000 COP mensual 3264000"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 272000.0,
+                    "pdf": 272000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 51680.0,
+                    "pdf": 51680.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "900319696",
+            "factura": "INV32",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037830",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (3 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 20160.53,
+                    "iva_linea": 0.0,
+                    "concepto": "12424696 - Acueducto, alcantarillado y energÃ­a - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 29372.43,
+                    "iva_linea": 0.0,
+                    "concepto": "12424696 - Acueducto, alcantarillado y energÃ­a - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 80554.04,
+                    "iva_linea": 0.0,
+                    "concepto": "12424696 - Acueducto, alcantarillado y energÃ­a - MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "860038299",
+            "factura": "SMSC60824",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 26852010.0,
+                    "iva_linea": 0.0,
+                    "concepto": "COLOMBIA / 05193 / SEGURO DE VIDA / ENERO 2026"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "PAN AMERICAN LIFE DE COLOMBIA COMPANIA DE SEGUROS SA",
+                    "pdf": "PAN AMERICAN LIFE DE COLOMBIA COMPAÑIA DE SEGUROS S.A."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 26852010.0,
+                    "pdf": 26852010.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 0.0,
+                    "pdf": 0.0
+                },
+                "fecha": {
+                    "maestro": "15/01/2026",
+                    "pdf": "15/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800079939",
+            "factura": "59205",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 3016000.0,
+                    "iva_linea": 573040.0,
+                    "concepto": "mantenimiento anual UPS  Torre 90 Enero 3016000"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 3016000.0,
+                    "pdf": 3016000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 573040.0,
+                    "pdf": 573040.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800079939",
+            "factura": "59206",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 1008000.0,
+                    "iva_linea": 191520.0,
+                    "concepto": "mantenimiento anual UPS  FIC 48 Enero 1008000"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 1008000.0,
+                    "pdf": 1008000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 191520.0,
+                    "pdf": 191520.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890900943",
+            "factura": "X9922531320",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 3260515.0,
+                    "iva_linea": 49485.0,
+                    "concepto": "COMPRA PREMIOS DICIEMBRE DISNEY20 TARJETAS VANILLA X $50.000 MAS $6.600 POR ACTIVACION20 TARJETAS VA"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COLOMBIANA DE COMERCIO SA Y/O ALKOSTO SA",
+                    "pdf": "ALKOSTO"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 3260515.0,
+                    "pdf": 3260515.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 49485.0,
+                    "pdf": 49485.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890982458",
+            "factura": "FM50625",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Factura repetida en Maestro (2 registros)",
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 8590272.1,
+                    "iva_linea": 0.0,
+                    "concepto": "Security services 24/7 City - October"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 954474.68,
+                    "iva_linea": 181350.19,
+                    "concepto": "Security services 24/7 City - October"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "pdf": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 9544746.78,
+                    "pdf": 9544746.78,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 181350.19,
+                    "pdf": 181350.19
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037830",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890982458",
+            "factura": "FM50623",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Factura repetida en Maestro (2 registros)",
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 12510773.36,
+                    "iva_linea": 0.0,
+                    "concepto": "Line 3: Security Services Titan One 24/7 guard December"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 1390085.93,
+                    "iva_linea": 264116.33,
+                    "concepto": "Line 3: Security Services Titan One 24/7 guard December"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "pdf": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 13900859.29,
+                    "pdf": 13900859.29,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 264116.33,
+                    "pdf": 264116.33
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037460",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (4 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 8503.49,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424720 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 14777.97,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424720 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 111554.35,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424720 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 4,
+                    "subtotal_linea": 659694.19,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424720 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890982458",
+            "factura": "FM50622",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Factura repetida en Maestro (2 registros)",
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 48282666.44,
+                    "iva_linea": 0.0,
+                    "concepto": "DEC SECURITY SERVICES CAPONE - COP $54.515.397,88 / USD 13.792,40"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 5364740.72,
+                    "iva_linea": 1019300.74,
+                    "concepto": "DEC SECURITY SERVICES CAPONE - COP $54.515.397,88 / USD 13.792,40"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "pdf": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 53647407.16,
+                    "pdf": 53647407.16,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 1019300.74,
+                    "pdf": 1019300.74
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037395",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (3 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 80553.78,
+                    "iva_linea": 0.0,
+                    "concepto": "12424694 - Acueducto, energia y alcantarillado - MED1 / del 24 nov al 23 dic"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 84274.26,
+                    "iva_linea": 0.0,
+                    "concepto": "12424694 - Acueducto, energia y alcantarillado - MED1 / del 24 nov al 23 dic"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 109641.96,
+                    "iva_linea": 0.0,
+                    "concepto": "12424694 - Acueducto, energia y alcantarillado - MED1 / del 24 nov al 23 dic"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890900943",
+            "factura": "X9922531322",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 5057411.0,
+                    "iva_linea": 77389.0,
+                    "concepto": "COMPRA DE 33 TARJETAS VANILLA X $50.000 MAS $6.600 POR ACTIVACION COMPRA DE 30 TARJETAS VANILLA X $1"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COLOMBIANA DE COMERCIO SA Y/O ALKOSTO SA",
+                    "pdf": "ALKOSTO"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 5057411.0,
+                    "pdf": 5057411.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 77389.0,
+                    "pdf": 77389.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800079939",
+            "factura": "59208",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 2828000.0,
+                    "iva_linea": 537320.0,
+                    "concepto": "mantenimiento anual UPS  Titan Enero 2828000"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 2828000.0,
+                    "pdf": 2828000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 537320.0,
+                    "pdf": 537320.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800199498",
+            "factura": "FE910334",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Coincidencia Total"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 583476.0,
+                    "iva_linea": 110860.44,
+                    "concepto": "Security supplies for printing credentials - FIC48 - Dec - Jan - Feb"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "IDENTICO SAS",
+                    "pdf": "IDENTICO SAS"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 583476.0,
+                    "pdf": 583476.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 110860.44,
+                    "pdf": 110860.44
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037460",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037446",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (3 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 8503.49,
+                    "iva_linea": 0.0,
+                    "concepto": "12424700 - Acueducto, alcantarillado, energÃ­a MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 14777.97,
+                    "iva_linea": 0.0,
+                    "concepto": "12424700 - Acueducto, alcantarillado, energÃ­a MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 70746.54,
+                    "iva_linea": 0.0,
+                    "concepto": "12424700 - Acueducto, alcantarillado, energÃ­a MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890900943",
+            "factura": "X9922531321",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 3976740.0,
+                    "iva_linea": 52560.0,
+                    "concepto": "COMPRA DE 37 TARJETAS VANILLA X $100.000 MAS $8.900 DE ACTIVACION CLIENT FUNDED"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COLOMBIANA DE COMERCIO SA Y/O ALKOSTO SA",
+                    "pdf": "ALKOSTO"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 3976740.0,
+                    "pdf": 3976740.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 52560.0,
+                    "pdf": 52560.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037395",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037378",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (4 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 14332.02,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424721 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 22075.2,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424721 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 115553.44,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424721 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 4,
+                    "subtotal_linea": 815587.34,
+                    "iva_linea": 0.0,
+                    "concepto": "CONTRATO 12424721 - ACUEDUCTO, ENERGIA Y ALCANTARILLADO - MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "901487738",
+            "factura": "CTA25001539",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 650000.0,
+                    "iva_linea": 0.0,
+                    "concepto": "Accompaniment of the power plant technician - Torre 90"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037446",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490061448",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (3 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 8503.49,
+                    "iva_linea": 0.0,
+                    "concepto": "12424715 - Acueducto, Energia y Alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 14777.97,
+                    "iva_linea": 0.0,
+                    "concepto": "12424715 - Acueducto, Energia y Alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 80553.54,
+                    "iva_linea": 0.0,
+                    "concepto": "12424715 - Acueducto, Energia y Alcantarillado - MED1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "191",
+            "factura": "COYCO010801",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 12100.0,
+                    "iva_linea": 0.0,
+                    "concepto": "CAMARA DE COMERCIO ENERO"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490037378",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "6767695700004220",
+            "factura": "CONCENTRIXINV20251227",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 5134.98,
+                    "iva_linea": 0.0,
+                    "concepto": "Outbound call usage charges for Mexico(approx. usage 7027.15/month X USD 0.018 rate) =USD 126.4887"
+                }
+            ],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "890982458",
+            "factura": "FM50620",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Factura repetida en Maestro (2 registros)",
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 12510773.36,
+                    "iva_linea": 0.0,
+                    "concepto": "Line 5: Security Services Fic48 One 24/7 guard December"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 1390085.93,
+                    "iva_linea": 264116.33,
+                    "concepto": "Line 5: Security Services Fic48 One 24/7 guard December"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                    "pdf": "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA CTA."
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 13900859.29,
+                    "pdf": 13900859.29,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 264116.33,
+                    "pdf": 264116.33
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "800079939",
+            "factura": "59203",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Diferencia en Nombre"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 180000.0,
+                    "iva_linea": 34200.0,
+                    "concepto": "monitoreo UPS Service 7 Line 7 FIC â€“ 4 Equipements:Â  45 USD Mensual 180000 COP mensual 2160000 cop a"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                    "pdf": "SUCOMPUTO S.A.S"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 180000.0,
+                    "pdf": 180000.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 34200.0,
+                    "pdf": 34200.0
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890904996",
+            "factura": "1490061448",
+            "clasificacion": "Solo en PDFs",
+            "alertas": [
+                "Documento único en Solo en PDFs"
+            ],
+            "detalle_maestro": [],
+            "comparacion_global": "N/A"
+        },
+        {
+            "nit": "800199498",
+            "factura": "FE910335",
+            "clasificacion": "En ambos",
+            "alertas": [
+                "Coincidencia Total"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 830234.0,
+                    "iva_linea": 157744.46,
+                    "concepto": "Security supplies for printing credentials - Titan - Dec - Jan - Feb"
+                }
+            ],
+            "comparacion_global": {
+                "proveedor": {
+                    "maestro": "IDENTICO SAS",
+                    "pdf": "IDENTICO SAS"
+                },
+                "subtotal": {
+                    "maestro_total_calculado": 830234.0,
+                    "pdf": 830234.0,
+                    "diferencia": 0.0
+                },
+                "iva": {
+                    "maestro_total_calculado": 157744.46,
+                    "pdf": 157744.46
+                },
+                "fecha": {
+                    "maestro": "14/01/2026",
+                    "pdf": "14/01/2026"
+                }
+            }
+        },
+        {
+            "nit": "890905055",
+            "factura": "1490037838",
+            "clasificacion": "Solo en Maestro",
+            "alertas": [
+                "Factura repetida en Maestro (4 registros)",
+                "Documento único en Solo en Maestro"
+            ],
+            "detalle_maestro": [
+                {
+                    "fila_origen": 1,
+                    "subtotal_linea": 25989.06,
+                    "iva_linea": 0.0,
+                    "concepto": "12424716 - Acueducto, Energia y Alcantarillado Med1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 2,
+                    "subtotal_linea": 36669.66,
+                    "iva_linea": 0.0,
+                    "concepto": "12424716 - Acueducto, Energia y Alcantarillado Med1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 3,
+                    "subtotal_linea": 80553.9,
+                    "iva_linea": 0.0,
+                    "concepto": "12424716 - Acueducto, Energia y Alcantarillado Med1 / del 24 nov al 23 dic 2025"
+                },
+                {
+                    "fila_origen": 4,
+                    "subtotal_linea": 618000.38,
+                    "iva_linea": 0.0,
+                    "concepto": "12424716 - Acueducto, Energia y Alcantarillado Med1 / del 24 nov al 23 dic 2025"
+                }
+            ],
+            "comparacion_global": "N/A"
+        }
+    ],
+    "resumen ejecutivo": {
+        "metricas_globales": {
+            "total_facturas_unicas_analizadas": 39,
+            "coincidencias_completas": 18,
+            "total_discrepancias_monto": 0
+        },
+        "top_discrepancias": [],
+        "hallazgos": [
+            "Facturas con registros múltiples en Excel: 13",
+            "Registros únicos en PDF: 9"
+        ]
+    }
+}

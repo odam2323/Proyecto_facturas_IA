@@ -1,0 +1,144 @@
+{
+    "titulo": "ANÁLISIS DE COMPLETITUD Y TIPOLOGÍA DE FACTURAS (FUENTE: PDFs)",
+    "metadata": {
+        "fecha_analisis": "2026-02-03 20:38:36",
+        "total_procesados": 30,
+        "total_exitosos": 30
+    },
+    "distribucion_global": {
+        "ELECTRÓNICA": 18,
+        "EQUIVALENTE": 7,
+        "N/A": 4,
+        "DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD": 1
+    },
+    "detalle_por_tipo_documento": {
+        "ELECTRÓNICA": {
+            "cantidad_documentos": 18,
+            "representacion_del_total": "60.0%",
+            "analisis_campos": {
+                "cufe": {
+                    "cantidad": 18,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "nit_proveedor": {
+                    "cantidad": 18,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "orden_compra": {
+                    "cantidad": 17,
+                    "porcentaje": 94.4,
+                    "descripcion": "Muy frecuente (>80%)"
+                },
+                "fecha_vencimiento": {
+                    "cantidad": 17,
+                    "porcentaje": 94.4,
+                    "descripcion": "Muy frecuente (>80%)"
+                },
+                "digito_verificación": {
+                    "cantidad": 18,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                }
+            },
+            "conclusion_ia": "Este tipo de documento (ELECTRÓNICA) suele tener Siempre presente (100%) el CUFE y Siempre presente (100%) el NIT."
+        },
+        "EQUIVALENTE": {
+            "cantidad_documentos": 7,
+            "representacion_del_total": "23.3%",
+            "analisis_campos": {
+                "cufe": {
+                    "cantidad": 0,
+                    "porcentaje": 0.0,
+                    "descripcion": "No detectado (0%)"
+                },
+                "nit_proveedor": {
+                    "cantidad": 7,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "orden_compra": {
+                    "cantidad": 0,
+                    "porcentaje": 0.0,
+                    "descripcion": "No detectado (0%)"
+                },
+                "fecha_vencimiento": {
+                    "cantidad": 7,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "digito_verificación": {
+                    "cantidad": 7,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                }
+            },
+            "conclusion_ia": "Este tipo de documento (EQUIVALENTE) suele tener No detectado (0%) el CUFE y Siempre presente (100%) el NIT."
+        },
+        "N/A": {
+            "cantidad_documentos": 4,
+            "representacion_del_total": "13.3%",
+            "analisis_campos": {
+                "cufe": {
+                    "cantidad": 0,
+                    "porcentaje": 0.0,
+                    "descripcion": "No detectado (0%)"
+                },
+                "nit_proveedor": {
+                    "cantidad": 3,
+                    "porcentaje": 75.0,
+                    "descripcion": "Común (>50%)"
+                },
+                "orden_compra": {
+                    "cantidad": 3,
+                    "porcentaje": 75.0,
+                    "descripcion": "Común (>50%)"
+                },
+                "fecha_vencimiento": {
+                    "cantidad": 3,
+                    "porcentaje": 75.0,
+                    "descripcion": "Común (>50%)"
+                },
+                "digito_verificación": {
+                    "cantidad": 3,
+                    "porcentaje": 75.0,
+                    "descripcion": "Común (>50%)"
+                }
+            },
+            "conclusion_ia": "Este tipo de documento (N/A) suele tener No detectado (0%) el CUFE y Común (>50%) el NIT."
+        },
+        "DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD": {
+            "cantidad_documentos": 1,
+            "representacion_del_total": "3.3%",
+            "analisis_campos": {
+                "cufe": {
+                    "cantidad": 0,
+                    "porcentaje": 0.0,
+                    "descripcion": "No detectado (0%)"
+                },
+                "nit_proveedor": {
+                    "cantidad": 1,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "orden_compra": {
+                    "cantidad": 0,
+                    "porcentaje": 0.0,
+                    "descripcion": "No detectado (0%)"
+                },
+                "fecha_vencimiento": {
+                    "cantidad": 1,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                },
+                "digito_verificación": {
+                    "cantidad": 1,
+                    "porcentaje": 100.0,
+                    "descripcion": "Siempre presente (100%)"
+                }
+            },
+            "conclusion_ia": "Este tipo de documento (DOCUMENTO EQUIVALENTE ELECTRÓNICO SPD) suele tener No detectado (0%) el CUFE y Siempre presente (100%) el NIT."
+        }
+    }
+}

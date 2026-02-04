@@ -1,0 +1,73 @@
+{
+    "titulo": "DESCRIPCIÓN Y ANÁLISIS DEL ARCHIVO MAESTRO EXCEL",
+    "metadata": {
+        "fecha_analisis": "2026-02-03 20:38:36",
+        "archivo_origen": "/Users/andres/Desktop/proyecto_facturas_IA/Datos/YCO01 - AP LISTING 20260104 con nit.xlsx"
+    },
+    "contenido_clave": {
+        "monedas": {
+            "columna_identificada": "Curr.",
+            "valores_encontrados": [
+                "COP",
+                "USD"
+            ]
+        },
+        "fechas": {
+            "rango_emision_facturas": "01/01/2026 al 16/01/2026",
+            "columna_emision_usada": "Invoice Date",
+            "rango_vencimientos_pago": "07/01/2026 al 17/03/2026",
+            "columna_vencimiento_usada": "Due Date"
+        },
+        "proveedores": {
+            "total_unicos": 11,
+            "columna_usada": "Supplier/Beneficiary Name",
+            "lista_completa": [
+                "CAMARA DE COMERCIO DE BOGOTA",
+                "COLOMBIANA DE COMERCIO SA Y/O ALKOSTO SA",
+                "COOPERATIVA DE VIGILANCIA Y SEGURIDAD PROFESIONAL DE ANTIOQUIA COOPERATIVA LTDA",
+                "EDIFICIO TORRE 90 - PROPIEDAD HORIZONTAL",
+                "EMPRESAS DE MEDELLIN ESP",
+                "GVM LIMITED",
+                "IDENTICO SAS",
+                "MOON CREATIVO LLC",
+                "PAN AMERICAN LIFE DE COLOMBIA COMPANIA DE SEGUROS SA",
+                "SUCOMPUTO INFRAESTRUCTURA TECNOLOGICA SAS",
+                "VLA SAS"
+            ]
+        }
+    },
+    "calidad_datos": {
+        "integridad_global": "72.1%",
+        "vacios_por_columna": {
+            "Consecutivo": 55,
+            "Portfolio": 31,
+            "Legal Name": 55,
+            "COA": 0,
+            "Request Date": 0,
+            "Invoice Date": 0,
+            "Due Date": 0,
+            "Supplier/Beneficiary Name": 0,
+            "Invoice ID": 0,
+            "NIT": 0,
+            "Subtotal": 0,
+            "VAT/WHT1": 0,
+            "VAT/WHT2": 0,
+            "Amount Total": 0,
+            "Curr.": 0,
+            "Ex. Rate": 0,
+            "In USD": 0,
+            "Category": 53,
+            "Supplier Reference Number": 55,
+            "PO #": 31,
+            "Spend Category": 0,
+            "Cost Center": 0,
+            "Location": 0,
+            "MSA": 0,
+            "Line Item Description": 0,
+            "PO #2": 55,
+            "WD": 55,
+            "AP Comment": 55,
+            "Base / Subtotal": 0
+        }
+    }
+}

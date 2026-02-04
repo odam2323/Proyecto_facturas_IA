@@ -1,0 +1,66 @@
+2026-02-02 23:23:38,440 - INFO - Consultando modelos permitidos...
+2026-02-02 23:23:39,062 - INFO - Modelo encontrado: models/gemini-2.5-flash
+2026-02-02 23:23:39,063 - INFO - 🚀 Iniciando procesamiento de 30 archivos...
+2026-02-02 23:23:39,063 - INFO - [1/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490061426.pdf
+2026-02-02 23:23:56,719 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:23:58,223 - INFO - [2/30] Analizando: YCO01_CAMARA COMERCIO BOGOTÁ_COYCO010801.pdf
+2026-02-02 23:24:07,604 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:24:09,105 - INFO - [3/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037460.pdf
+2026-02-02 23:24:24,264 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:24:25,769 - INFO - [4/30] Analizando: YCO01_SUCOMPUTO S.A.S _59208.pdf
+2026-02-02 23:24:35,425 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:24:36,927 - INFO - [5/30] Analizando: YCO01_Pan American Life De Colombia_SMSC60824.pdf
+2026-02-02 23:24:46,894 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:24:48,400 - INFO - [6/30] Analizando: YCO01_IDENTICO SAS_FE910335.pdf
+2026-02-02 23:24:58,056 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:24:59,558 - INFO - [7/30] Analizando: YCO01_IDENTICO SAS_FE910334.pdf
+2026-02-02 23:25:06,357 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:25:07,862 - INFO - [8/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037830.pdf
+2026-02-02 23:25:23,040 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:25:24,545 - INFO - [9/30] Analizando: YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50625.pdf
+2026-02-02 23:25:36,151 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:25:37,657 - INFO - [10/30] Analizando: YCO01_GVM LIMITED_Concentrix-INV-202512-27.pdf
+2026-02-02 23:25:46,695 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:25:48,197 - INFO - [11/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037395.pdf
+2026-02-02 23:26:08,509 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:26:10,014 - INFO - [12/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490061448.pdf
+2026-02-02 23:26:21,000 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:26:22,503 - INFO - [13/30] Analizando: YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50620.pdf
+2026-02-02 23:26:33,178 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:26:34,678 - INFO - [14/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037838.pdf
+2026-02-02 23:26:53,003 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:26:54,506 - INFO - [15/30] Analizando: YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50621.pdf
+2026-02-02 23:27:05,742 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:27:07,247 - INFO - [16/30] Analizando: YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50623.pdf
+2026-02-02 23:27:17,935 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:27:19,441 - INFO - [17/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037378.pdf
+2026-02-02 23:27:38,928 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:27:40,430 - INFO - [18/30] Analizando: YCO01_VLA S.A.S_FE2560.pdf
+2026-02-02 23:27:48,222 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:27:49,728 - INFO - [19/30] Analizando: YCO01_COOPERATIVA DE VIGILANCIA Y SEGURIDAD_FM50622.pdf
+2026-02-02 23:28:01,458 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:02,963 - INFO - [20/30] Analizando: YCO01_Moon Creativo LLC_INV32.pdf
+2026-02-02 23:28:09,886 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:11,389 - INFO - [21/30] Analizando: YCO01_SUCOMPUTO S.A.S _59205.pdf
+2026-02-02 23:28:22,452 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:23,957 - INFO - [22/30] Analizando: YCO01_SUCOMPUTO S.A.S _59206.pdf
+2026-02-02 23:28:31,664 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:33,166 - INFO - [23/30] Analizando: YCO01_EDIFICIO TORRE 90_CTA25001539.pdf
+2026-02-02 23:28:33,185 - INFO -    -> Escaneo detectado (OCR).
+2026-02-02 23:28:41,906 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:43,410 - INFO - [24/30] Analizando: YCO01_EMPRESAS DE MEDELLIN ESP_1490037446.pdf
+2026-02-02 23:28:57,409 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:28:58,914 - INFO - [25/30] Analizando: YCO01_SUCOMPUTO S.A.S _59203.pdf
+2026-02-02 23:29:10,478 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:29:11,983 - INFO - [26/30] Analizando: YCO01_SUCOMPUTO S.A.S _59202.pdf
+2026-02-02 23:29:24,916 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:29:26,418 - INFO - [27/30] Analizando: YCO01_ Colombiana de Comercio S.A. _X9922531322.pdf
+2026-02-02 23:29:34,128 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:29:35,634 - INFO - [28/30] Analizando: YCO01_ Colombiana de Comercio S.A. _X9922531320.pdf
+2026-02-02 23:29:44,885 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:29:46,387 - INFO - [29/30] Analizando: YCO01_SUCOMPUTO S.A.S _59201.pdf
+2026-02-02 23:29:55,328 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:29:56,833 - INFO - [30/30] Analizando: YCO01_ Colombiana de Comercio S.A. _X9922531321.pdf
+2026-02-02 23:30:08,849 - INFO -    -> Procesado: Exitoso
+2026-02-02 23:30:10,483 - INFO - ✅ Excel generado: Reporte_Facturacion_Final.xlsx
+2026-02-02 23:30:10,489 - INFO - ✅ JSON generado: Reporte_Ejecutivo_Conciliacion.json
