@@ -21,7 +21,7 @@ logging.basicConfig(
 
 # inicializamos información relevante para el ceodigo.
 
-API_KEY = "AIzaSyBYyfweK61CoJv1PII6-Xf0jctWyPg_fNM"
+API_KEY = "Aquí va la API"
 CARPETA_PDFS = "/Users/andres/Desktop/proyecto_facturas_IA/Datos"
 NOMBRE_EXCEL_SALIDA = "Reporte_Facturacion_PDFs.xlsx"
 NOMBRE_JSON_SALIDA = "Reporte_Ejecutivo.json"
